@@ -126,3 +126,19 @@ app.listen(8000, () => {
   console.log('Servidor escuchando en el puerto 8000')
 })
 ```
+
+Al final, el código de tu servidor básico debe verse así
+
+```
+const express = require('express');
+
+const app = express();
+
+app.get('/', (request, response) => {
+  res.send('Hola Mundo desde express');
+})
+
+app.listen(8000, () => {
+  console.log('Servidor escuchando en el puerto 8000')
+})
+```
